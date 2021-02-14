@@ -1,0 +1,44 @@
+{
+  "name": "curso-protractor-tat",
+  "version": "1.0.0",
+  "description": "Projeto para o curso de Protractor da Escola TAT",
+  "main": "index.js",
+  "scripts": {
+    "lint": "npx standard",
+    "lint:fix": "npx standard --fix",
+    "pretest:github": "webdriver-manager update --versions.chrome 88.0.4324.96",
+    "pretest:local": "webdriver-manager update",
+    "test": "npm run test:chrome && npm run test:firefox",
+    "test:chrome": "protractor configurations/chromeConfig.js",
+    "test:firefox": "protractor configurations/firefoxConfig.js"
+  },
+  "standard": {
+    "globals": [
+      "beforeAll",
+      "beforeEach",
+      "browser",
+      "by",
+      "describe",
+      "element",
+      "expect",
+      "it"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wlsf82/curso-protractor-tat.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wlsf82/curso-protractor-tat/issues"
+  },
+  "homepage": "https://github.com/wlsf82/curso-protractor-tat#readme",
+  "devDependencies": {
+    "faker": "^5.2.0",
+    "protractor": "^7.0.0",
+    "protractor-helper": "^4.1.9",
+    "standardjs": "^1.0.0-alpha"
+  }
+}
