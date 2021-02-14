@@ -7,7 +7,7 @@ jobs:
       - name: Project checkout
         uses: actions/checkout@v1
       - name: Node.js setup
-        uses: actions/setup-node@v1.1.0
+        uses: actions/setup-node@10.23.2
       - name: installation of dependencies
         run: npm ci
       - name: Lint
