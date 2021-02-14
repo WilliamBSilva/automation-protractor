@@ -5,7 +5,7 @@ module.exports.config = configCreator({
     browserName: 'firefox',
     'moz:firefoxOptions': {
       args: [
-        // '--headless'
+        '--headless'
       ]
     }
   }
