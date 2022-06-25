@@ -10,6 +10,7 @@ describe('Give I\'m at a random destination page', () => {
     destination.visit()
   })
 
+// Teste
   it('Then I see  an image, a heading, a paragraph, and a anchor', () => {
     helper.waitForElementVisibility(destination.self.image)
     helper.waitForElementVisibility(destination.self.heading)
